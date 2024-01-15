@@ -6,14 +6,14 @@ http://www.christiantsao.com
 
 http://www.linkedin.com/in/christiantsao
 
-# Summary
+## Summary
 
 University of Washington senior with GIS experience
 
-# Work Experience (only last 10 years)
+## Work Experience (only last 10 years)
 
-## University of Washington (Seattle, Washington)
-*[University of Washington] Located in Seattle.*
+#### University of Washington (Seattle, Washington)
+>*[University of Washington] Located in Seattle.*
 
 **Student** (2020 - 2024)
 
