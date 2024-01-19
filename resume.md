@@ -8,11 +8,13 @@ http://www.linkedin.com/in/christiantsao
 
 ## Summary
 
-University of Washington senior with GIS experience
+University of Washington student majoring in Geography: Data Science
 
 ## Work Experience (only last 10 years)
 
-#### University of Washington (Seattle, Washington)
+<!-- #### University of Washington (Seattle, Washington) !![University of Washington Logo](assets/uwLogo.png "Uw Logo") -->
+#### <img src="assets/uwLogo.png" alt="drawing" width="25"/> University of Washington (Seattle, Washington)
+
 >*[University of Washington] Located in Seattle.*
 
 **Student** (2020 - 2024)
