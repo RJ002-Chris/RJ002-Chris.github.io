@@ -6,7 +6,7 @@ http://www.christiantsao.com
 
 http://www.linkedin.com/in/christiantsao
 
-## Summary
+# Summary
 
 University of Washington student majoring in Geography: Data Science
 
