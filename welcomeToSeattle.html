@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Welcome to Seattle</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                <li><a class="dropdown-item" href="https://rj002-chris.github.io/resume">My Resume</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-6">
+                        <div class="text-center my-5">
+                            <h1 class="fw-bolder mb-3">Exploring Popular Destinations through Alaska Airlines
+                            </h1>
+                            <p class="lead fw-normal text-muted mb-4">In this project, the aim is to systematically develop processes for data
+                                creation, collection, and formation that captures complex context-rich human spatial
+                                experiences, learn to create Sankey diagrams in Python and understand the context of data for communicating them in visual form.
+                                Through this study we will find creative ways of encoding and visualizing spatial data to
+                                deliver the context behind them.</p>
+                            <!-- <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About section one-->
+        <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="imgs\welcomeToSeattle\alaskaAirlines.png" alt="Alaska Airlines" /></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Why Alaska Airlines?</h2>
+                        <p class="lead fw-normal text-muted mb-0">Alaska Airlines was founded in 1932 in Anchorage, AK,
+                            but after 2 decades of operations, they decided to move their headquarters to Paine Field,
+                            an airport north of Seattle. So, despite its name, Alaska airlines have been operating in
+                            Seattle for the past 7 decades, now flying to more than 120 destinations in five countries.
+                            Alaska airlines and their robust number of flights has allowed for more direct flight routes
+                            to and from Seattle. With the increasing popularity, the city of Seattle has also seen an
+                            increase in number of flights to Seattle, with Seattle ranking at number 15 on most popular
+                            US cities (YouGov, 2023), and the Seattle–Tacoma International Airport sitting just outside
+                            the top 10 busiest US airports, ranking in at number 11. (Mala, 2024) With this in mind, we
+                            wanted to find out the top 10 airports in the US with the most flights from
+                            Seattle flown by Alaska airlines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section two-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <!-- <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="imgs\welcomeToSeattle\codepreview.png" alt="Google Colab Preview" /></div>
+                    <div class="col-lg-6"> -->
+                        <h2 class="fw-bolder">Data Collection &amp; Method</h2>
+                        <p class="lead fw-normal text-muted mb-0">The data was collected from <a
+                                href="https://openflights.org/#">Open Flights</a>, a website
+                            that displays route maps for almost every airplane and airport in the world.
+                            After filtering to Seattle–Tacoma International Airport and only Alaska Airlines
+                            flights, we were able to download the dataset from the website. We then collaborated through
+                            a 
+                            <a href="https://colab.research.google.com/drive/146fw5Y_el4zTmCGzU8fyAlnSzJcJ2R5N?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">
+                                google collab file
+                            </a>
+                            , filtering the dataset to only the
+                            data we need. We then created a Sankey Diagram using the plotly library,
+                            presenting the top 10 most popular destinations flown by Alaska Airlines.
+                            We then added a legend using different colors to differentiate the various states,
+                            as well as set the distance to each node according to the distance between Seattle and the destination in real life.
+                            Since there were some nodes with the same number of planes, we figured that having the reader be able to
+                            differentiate the lengths of the node was important. From the chart we can effectively
+                            observe the top destinations on the list. Most of the destinations were within California,
+                            which is very close to Seattle, but the destination with the most flights is Anchorage,
+                            Alaska. This result was not surprising as Anchorage is the original city Alaska Airlines was
+                            founded in, and California is right below Seattle.
+                            <br></br>
+                            <img class="img-fluid rounded mb-5 mb-lg-0" src="imgs\welcomeToSeattle\codepreview.png"
+                                alt="Google Colab Preview" />
+                        </p>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- About section three-->
+        <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <!-- <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="imgs\welcomeToSeattle\infographicPreview.png" alt="Final Infographic" /></div> -->
+                    <!-- <div class="col-lg-6"> -->
+                        <h2 class="fw-bolder">Findings and Conclusion</h2>
+                        <p class="lead fw-normal text-muted mb-0">Our process of analyzing and producing the
+                            visualization has allowed us to explore more about what destinations are most popular from
+                            Seattle, which might be supported by Alaska airlines have more planes available to fly you
+                            to that destination. Although having moved their headquarters from Anchorage to Seattle,
+                            they still maintain a strong connection with lots of flights available. As one of the major
+                            airlines in the pacific northwest, the increasing popularity of Seattle will also help the
+                            airline business grow, which could result in more flights soon. If we were to collect
+                            information and make this infographic again the same time next year, we could definitely see
+                            big changes to the infographic.
+                            <br></br>
+                            <img class="img-fluid rounded mb-5 mb-lg-0"
+                                src="imgs\welcomeToSeattle\infographicPreview2.png" alt="Final Infographic" />
+                        </p>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- About section four-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="imgs\welcomeToSeattle\seaTacAirport.png" alt="Sea-Tac Airport Preview" /></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">Thoughts &amp; Reflection</h2>
+                        <p class="lead fw-normal text-muted mb-0">The process of finding information definitely shaped
+                            our topic, as we took quite a bit of time to find enough information to be able to use for
+                            our lab assignment. Communicating between group members was not an issue as we communicated
+                            effectively through discord. Even if members did not attend section, those who did filled
+                            them in on what they missed, or discussion we held about our project. Coding was also not an
+                            issue as everyone on our team could help if they needed. My role in this project was the
+                            Data Visualizer and I think I did well. Although creating a Sankey Diagram was new to me, I
+                            could easily search up the plotly library and learn how to set parameters for the diagram.
+                            My goal for the next project is to be able to choose a topic we really like and find the
+                            information we need rather than selecting our topic based on the data available to us.
+                            Once again thanks to my great team for working together to create the wonderful infographic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section five-->
+        <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <!-- <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="imgs\whatsHappeningInTheTown\radialDendrogram.png" alt="Radial Dendrogram Preview" /></div> -->
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">References</h2>
+                        <p class="lead fw-normal text-muted mb-0">
+                            <ul>
+                                <li>
+                                    OpenFlights.org: Flight logging, mapping, stats and sharing. Available at:
+                                    <a href="https://openflights.org/#" target="_blank" rel="noopener noreferrer">
+                                        https://openflights.org/#
+                                    </a>
+                                     (Accessed: 23 January 2024).
+                                </li>
+                                <li>
+                                    The most popular cities in America: Travel: Yougov ratings (no date) The most
+                                    popular cities in America | Travel | YouGov Ratings. Available at:
+                                    <a href="https://today.yougov.com/ratings/travel/popularity/cities/all" target="_blank" rel="noopener noreferrer">
+                                        https://today.yougov.com/ratings/travel/popularity/cities/all
+                                    </a>
+                                     (Accessed: 23 January 2024).
+                                </li>
+                                <li>
+                                    Mala, A. (2024) The 10 busiest airports in the United States, WorldAtlas. Available
+                                    at: 
+                                    <a href="https://www.worldatlas.com/places/the-10-busiest-airports-in-the-united-states.html" target="_blank" rel="noopener noreferrer">
+                                        https://www.worldatlas.com/places/the-10-busiest-airports-in-the-united-states.html
+                                    </a>
+                                     (Accessed: 23 January 2024).
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team members section-->
+        <!-- <section class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="fw-bolder">Our team</h2>
+                    <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4"
+                                src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                            <h5 class="fw-bolder">Ibbie Eckart</h5>
+                            <div class="fst-italic text-muted">Founder &amp; CEO</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4"
+                                src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                            <h5 class="fw-bolder">Arden Vasek</h5>
+                            <div class="fst-italic text-muted">CFO</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-sm-0">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4"
+                                src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                            <h5 class="fw-bolder">Toribio Nerthus</h5>
+                            <div class="fst-italic text-muted">Operations Manager</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4"
+                                src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                            <h5 class="fw-bolder">Malvina Cilla</h5>
+                            <div class="fst-italic text-muted">CTO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <!-- <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div> -->
+                    <div class="small m-0 text-white">Welcome To Seattle</div>
+                </div>
+                <div class="col-auto">
+                    <!-- <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span> -->
+                    <a class="link-light small" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
