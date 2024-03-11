@@ -81,23 +81,20 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"
-                            src="imgs\whatsHappeningInTheTown\rooseveltPreview.png" alt="Roosevelt Neighborhood" />
+                            src="imgs\grayAnatomy\seattleGraySky.png" alt="Seattle's Gray Sky" />
                     </div>
                     <div class="col-lg-6">
                         <h2 class="fw-bolder">The Seattle Landscape</h2>
-                        <p class="lead fw-normal text-muted mb-0">Roosevelt is a neighborhood located in Northeast
-                            Seattle and is known for its diverse and socially active community that serves as a
-                            transportation and commercial hub. If the name of this neighborhood sounded familiar, that
-                            is because President Roosevelt grew very fond of this neighborhood and since his death in
-                            1919, the local community remembered his Seattle visits, as well as his effort to preserve
-                            much of the neighborhood’s nature and beauty so after a naming contest in 1927, the place
-                            was officially named “Roosevelt Neighborhood”. Since then, the neighborhood has maintained
-                            its natural beauty. Being able to experience nature while enjoying a nice cup of coffee in
-                            the Roosevelt neighborhood has never been easier as the neighborhood boasts more than 15
-                            cafes in that area alone, ranging from franchise cafes to local-owned roasteries. As a
-                            coffee enjoyer myself, this made me want to explore the wide range of cafes in the
-                            neighborhood and see whether the culture and history here has given their coffee here a
-                            unique scent.</p>
+                        <p class="lead fw-normal text-muted mb-0">The sky is usually an endless canvas filled with
+                            various colors that change throughout the year such as the cloudless blue skies in the
+                            summer or the eerie greys during the cold winter, but that is not the case here in Seattle
+                            as we seem to get a gloomy grey forecast all year round. In this lab we will be visualizing
+                            the color change of a specific place over a period, in this case we chose the fountain area
+                            in the University of Washington. The area has the fountain as its center piece and on a nice
+                            day, Mount Rainier can be seen in the background. The buildings to its left and right are
+                            all built out of red bricks, so we expected our outcome to have a little bit of red. Overall
+                            it is a very nice area to capture for our project.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -107,27 +104,30 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
-                            src="imgs\whatsHappeningInTheTown\cafePreview.jpg" alt="Cafe Preview" /></div>
+                            src="imgs\grayAnatomy\processedImagePreview.png" alt="Processed Image Preview" /></div>
                     <div class="col-lg-6">
                         <h2 class="fw-bolder">Data Collection &amp; Method</h2>
-                        <p class="lead fw-normal text-muted mb-0">During our field scouting of the Roosevelt
-                            Neighborhood, we noticed several coffee shops around the area as every corner we made, there
-                            would be one. Since Seattle is known as the birthplace of Starbucks and is the city where
-                            coffee has turned from a daily necessity to a form of art, we decided to look at coffee
-                            shops in Roosevelt Neighborhood and see what past customers had to say in general about the
-                            coffee scene here. In this project we used a
-                            <a href="https://colab.research.google.com/drive/1p7iOEefWETyoUHPqRtYnXBRtkKuCsug_?usp=sharing"
+                        <p class="lead fw-normal text-muted mb-0">Over the period of 3 days, the four of us took a set
+                            of photos at different periods of time from morning until evening. We then compiled the
+                            folders in our google drive where we processed them through a 
+                            <a href="https://colab.research.google.com/drive/1OsGunjEARIahLbE47lr_3ysGNK541QGO?usp=sharing"
                                 target="_blank" rel="noopener noreferrer">
-                                Yelp web crawler
+                                colab notebook
                             </a>
-                            made by Yifan to retrieve several café reviews from Yelp. We then compiled the comments and
-                            chose 15 cafes for this
-                            project. We then cleaned out the extra reviews and the comments before converting it into a
-                            <a href="https://drive.google.com/file/d/1J_iKlCpVK2TMkkHXA7feKw69cKxRh4Pq/view?usp=sharing"
+                            . I created a for-loop from the given colab notebook to make the process easier for us and saved the
+                            processed images to a ‘
+                            <a href="https://drive.google.com/drive/folders/1Td3zfBlFitjeSkW2DsLuRLUVX5SAkDPG?usp=sharing"
                                 target="_blank" rel="noopener noreferrer">
-                                JSON
+                                results
                             </a>
-                            , where we uploaded it to observable to create a radial dendrogram.
+                            ’ folder. Processing the image saves the top ten colors from
+                            the image, so now we will loop through them again to convert the rgb colors to hex, as well
+                            as calculate the percentages of each color. Each image’s data is stored as a data frame,
+                            which is then stored in a list that will be used to create the infographic. For this project
+                            we used the altair library to create the bar chart, showing the top ten colors from each
+                            image with the x axis as the date and times, and the y axis as the percentages of color as
+                            seen in chart below.
+                            
                         </p>
                     </div>
                 </div>
@@ -141,22 +141,16 @@
                             src="imgs\whatsHappeningInTheTown\radialDendrogram.png" alt="Radial Dendrogram Preview" /></div>
                     <div class="col-lg-6"> -->
                     <h2 class="fw-bolder">Findings and Conclusion</h2>
-                    <p class="lead fw-normal text-muted mb-0">Looking at the radial dendrogram, we can see that most
-                        of the comments were positive comments, either complimenting the coffee or the café design,
-                        with a few negative comments describing the bad coffee they tasted, or one such comment that
-                        said “greedy”. Some of the comments also describe the experience of the café itself. The
-                        variance in comments regarding whether they enjoyed the coffee or not could be explained by
-                        the wide range of coffee available, such as espressos, cappuccinos, lattes, americanos, or
-                        other new types of coffees. Many different factors go into producing the coffee and the
-                        resulting taste, from the bean the café uses to the method of brewing and style of coffee.
-                        Each person also has their own personal tastes so not everyone will have the same thoughts
-                        on the same coffee. This is why although there are various opinions about the cafes as seen
-                        on yelp, I would still recommend people going in person to try them out as it may fit their
-                        taste better. The comments aside, it was interesting to see the different opinions people
-                        had on cafes and made me want to go out to try them all.
+                    <p class="lead fw-normal text-muted mb-0">As expected, most of the colors seen were mostly grey,
+                        with some dark toned colors. The bars arranged by the date and time make it easier to observe
+                        the change in colors throughout the day. Comparing the color schemes, there isn’t much
+                        difference from other than the one day we had good weather and a sunny sky. It seems that the
+                        color that appeared the most is grey with some shades of brown in there as well. While we were
+                        lucky to have good weather on that one day, this confirms the fact that Seattle mostly sees a
+                        grey sky throughout the whole day.
                         <br></br>
                         <img class="img-fluid rounded mb-5 mb-lg-0"
-                            src="imgs\whatsHappeningInTheTown\radialDendrogram.png" alt="Final Infographic" />
+                            src="imgs\grayAnatomy\finalInfographicPreview.png" alt="Final Infographic" />
                     </p>
                     <!-- </div> -->
                 </div>
@@ -167,69 +161,19 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
-                            src="imgs\whatsHappeningInTheTown\portageBayCafePreview.png"
-                            alt="Portage Bay Cafe Preview" /></div>
+                            src="imgs\grayAnatomy\closingPicture.png"
+                            alt="Photo of the UW Fountain" /></div>
                     <div class="col-lg-6">
                         <h2 class="fw-bolder">Thoughts &amp; Reflection</h2>
-                        <p class="lead fw-normal text-muted mb-0">I personally have only been to Roosevelt Neighborhood
-                            once and remember trying one of the coffee shops there. It was a nice and quiet neighborhood
-                            to peacefully enjoy some coffee. During the field scouting for this project, while taking
-                            photos to create a sketch, I remembered my past experiences and decided to try a different
-                            coffee shop. This was when I got the idea of café reviews, as I was also curious to see what
-                            people had to say about the coffee in this neighborhood. Me and my group mate’s role were
-                            essentially the same for this project as we both went on a scouting trip at our own
-                            conveniences, as well as helped each other work on the radial dendrogram. I felt that even
-                            if we didn’t get to meet up and discuss together, since we both did our jobs and
-                            communicated to each other about what we had to do, we were able to get the assignment done
-                            swiftly.
-                        </p>
-                        </br>
-                        <p class="lead fw-normal text-muted mb-0">Since the cafes represented in the infographic are
-                            ones that we chose and the
-                            comments are only the ones from yelp, the dendrogram somewhat represents what people think
-                            about cafes in the Roosevelt Neighborhood. The coffee scene is also very big in Seattle
-                            which contributed to choosing this topic. Creating the radial dendrogram wasn’t that
-                            complicated as the instructions were easy to follow. As for improvements, if we had more
-                            time we would have liked to try and gather more comments for each café to give the radial
-                            dendrogram more variance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About section five-->
-        <section class="py-5 bg-light" id="scroll-target">
-            <div class="container px-5 my-5">
-                <div class="row gx-5 align-items-center">
-                    <!-- <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"
-                            src="imgs\whatsHappeningInTheTown\radialDendrogram.png" alt="Radial Dendrogram Preview" /></div> -->
-                    <div class="col-lg-6">
-                        <h2 class="fw-bolder">References</h2>
-                        <p class="lead fw-normal text-muted mb-0">
-                            <ul>
-                                <li>
-                                    Roosevelt history (2020) RNA | The Roosevelt
-                                    Neighborhood Association. Available at:
-                                    <a href="https://rooseveltseattle.org/about/our-neighborhood/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        https://rooseveltseattle.org/about/our-neighborhood/
-                                    </a>
-                                    (Accessed: 02 February 2024).
-                                </li>
-                                <li>
-                                    <a href="https://www.yelp.com/search?cflt=cafes&find_loc=Roosevelt%2C+Seattle%2C+WA+98115"
-                                        target="_blank" rel="noopener noreferrer">
-                                        Yelp Reviews
-                                    </a>
-                                </li>
-                                <li>
-                                    Dataset
-                                    <a href="https://drive.google.com/file/d/1mKfuoBLOHV8VUyl5_lRwKSDssgyVy0sA/view?usp=sharing"
-                                        target="_blank" rel="noopener noreferrer">
-                                        link
-                                    </a>
-                                </li>
-                            </ul>
+                        <p class="lead fw-normal text-muted mb-0">Before we started taking photos, I had already
+                            expected grey colors to be the most prominent on the infographic, but luckily, we had some
+                            good sunny days that gave us beautiful blue skies, so our infographic wasn’t entirely
+                            monotone. I think what we could have done better is to take pictures over an extended time
+                            period, as our pictures were taking about 2 hours apart, but we chose the times based on
+                            everyone’s’ convenience. Creating the for-loops to process the images made it way easier and
+                            more efficient so we didn’t have to spend too much time on that at all. I believe that this
+                            project went very smoothly and that’s all thanks to the great communication we had among the
+                            team.
                         </p>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ christiantsao@gmail.com
 
 http://www.christiantsao.com
 
-http://www.linkedin.com/in/christiantsao
+http://www.linkedin.com/in/jchristiantsao
 
 # Summary
 
