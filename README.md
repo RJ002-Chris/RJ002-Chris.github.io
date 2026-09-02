@@ -39,8 +39,14 @@ Only write a bespoke page component when a project needs a custom layout. In tha
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which lints, builds, verifies, and publishes `dist` to GitHub Pages.
+`.github/workflows/deploy.yml` has two jobs.
+
+`ci` runs on pushes to `main` and `draft` and on any pull request into `main`. It lints, builds and verifies, and publishes nothing. Use this to confirm a branch is healthy before merging.
+
+`deploy` runs only on a push to `main`, only after `ci` passes, and publishes `dist` to GitHub Pages.
 
 This requires Settings, Pages, Source set to **GitHub Actions** rather than a branch.
+
+There is no per-branch preview URL. A user site has a single Pages deployment, so `draft` is verified by `ci` and by running the build locally, not by a separate deployed copy.
 
 Because GitHub Pages has no server-side rewrite, the build writes a copy of `index.html` to `dist/404.html`. Pages serves that file for any unmatched path while leaving the URL intact, which lets React Router resolve deep links such as `/portfolio` on a cold load or refresh.

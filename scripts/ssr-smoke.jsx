@@ -7,12 +7,18 @@ import About from '../src/pages/About';
 import Portfolio from '../src/pages/Portfolio';
 import ProjectDetail from '../src/pages/ProjectDetail';
 import NotFound from '../src/pages/NotFound';
+import ContentAudit from '../src/pages/ContentAudit';
+import CreditRisk from '../src/pages/CreditRisk';
+import FmcgStrategy from '../src/pages/FmcgStrategy';
 import WelcomeToSeattle from '../src/pages/WelcomeToSeattle';
 import WhatsHappening from '../src/pages/WhatsHappening';
 import GrayAnatomy from '../src/pages/GrayAnatomy';
 import HappyPlaces from '../src/pages/HappyPlaces';
 
 const customProjectPages = [
+  { slug: 'content-audit', element: <ContentAudit /> },
+  { slug: 'credit-risk', element: <CreditRisk /> },
+  { slug: 'fmcg-strategy', element: <FmcgStrategy /> },
   { slug: 'welcome-to-seattle', element: <WelcomeToSeattle /> },
   { slug: 'whats-happening', element: <WhatsHappening /> },
   { slug: 'gray-anatomy', element: <GrayAnatomy /> },
@@ -43,6 +49,9 @@ export function run() {
     ['/', ['Christian Tsao', 'Featured Projects']],
     ['/about', ['Boonrawd', 'Power BI', 'Royal Thai Army']],
     ['/portfolio', ['My Work', 'Alaskan Airlines Flight Study']],
+    ['/projects/content-audit', ['Cross-Platform Content Audit', 'twenty-four claims in total', 'does not generalise']],
+    ['/projects/credit-risk', ['Four Errors I Made', 'reject inference', '0.756']],
+    ['/projects/fmcg-strategy', ['Builds Almost Nothing', 'One of six finalists', 'Year one is a data year']],
     ['/projects/welcome-to-seattle', ['Alaska Airlines']],
     ['/projects/whats-happening', ['Roosevelt']],
     ['/projects/gray-anatomy', ['Gray Anatomy']],

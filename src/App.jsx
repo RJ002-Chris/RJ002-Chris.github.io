@@ -7,6 +7,9 @@ import Portfolio from './pages/Portfolio';
 import ProjectDetail from './pages/ProjectDetail';
 import NotFound from './pages/NotFound';
 
+import ContentAudit from './pages/ContentAudit';
+import CreditRisk from './pages/CreditRisk';
+import FmcgStrategy from './pages/FmcgStrategy';
 import WelcomeToSeattle from './pages/WelcomeToSeattle';
 import WhatsHappening from './pages/WhatsHappening';
 import GrayAnatomy from './pages/GrayAnatomy';
@@ -16,6 +19,9 @@ import HappyPlaces from './pages/HappyPlaces';
 // through to the generic ProjectDetail template driven by src/data/projects.js,
 // so a new project only needs an entry in that file to get a working page.
 const customProjectPages = [
+  { slug: 'content-audit', element: <ContentAudit /> },
+  { slug: 'credit-risk', element: <CreditRisk /> },
+  { slug: 'fmcg-strategy', element: <FmcgStrategy /> },
   { slug: 'welcome-to-seattle', element: <WelcomeToSeattle /> },
   { slug: 'whats-happening', element: <WhatsHappening /> },
   { slug: 'gray-anatomy', element: <GrayAnatomy /> },

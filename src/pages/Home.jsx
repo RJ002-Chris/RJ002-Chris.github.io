@@ -18,8 +18,9 @@ export default function Home() {
                     Hi, I'm Christian Tsao
                   </h1>
                   <p className="lead text-white-50 mb-4">
-                    UW Geography & GIS student passionate about using spatial data
-                    to understand and improve the world around us.
+                    Data and analytics graduate based in Bangkok. I work in SQL,
+                    Power BI and Python, turning messy commercial data into
+                    decisions people can act on.
                   </p>
                   <div className="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
                     <Link className="btn btn-primary btn-lg px-4" to="/portfolio">
@@ -49,13 +50,14 @@ export default function Home() {
               <div className="col-lg-8 text-center">
                 <i className="bi bi-quote fs-1 text-primary opacity-50"></i>
                 <p className="fs-5 fst-italic text-muted mb-4">
-                  "I hope to use my experiences and skills in Geography to craft solutions to create a better world!"
+                  "The useful part of analysis is not the chart. It is being willing to
+                  find out you were wrong, and saying so.""
                 </p>
                 <div className="d-flex align-items-center justify-content-center gap-3">
                   <img className="avatar-sm" src="/assets/chrisProfilePic.jpg" alt="Christian Tsao" />
                   <div className="text-start">
                     <div className="fw-bold">Christian Tsao</div>
-                    <div className="text-muted small">University of Washington · Geography & GIS</div>
+                    <div className="text-muted small">BA Geography, Data Science option · University of Washington</div>
                   </div>
                 </div>
               </div>
@@ -68,10 +70,10 @@ export default function Home() {
           <div className="container px-5">
             <div className="row text-center g-4">
               {[
-                { icon: 'bi-geo-alt', label: 'GIS & Spatial Analysis' },
-                { icon: 'bi-bar-chart', label: 'Data Visualization' },
-                { icon: 'bi-code-slash', label: 'Python & Web Dev' },
-                { icon: 'bi-globe', label: 'Geography Research' },
+                { icon: 'bi-database', label: 'SQL' },
+                { icon: 'bi-bar-chart', label: 'Power BI' },
+                { icon: 'bi-funnel', label: 'Power Query & Excel' },
+                { icon: 'bi-code-slash', label: 'Python' },
               ].map(({ icon, label }) => (
                 <div className="col-6 col-md-3" key={label}>
                   <i className={`bi ${icon} fs-2 text-primary`}></i>
