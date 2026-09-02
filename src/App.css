@@ -1,0 +1,190 @@
+/* =============================================
+   Portfolio Custom Styles
+   Bootstrap handles layout — this adds
+   portfolio-specific styles only.
+   ============================================= */
+
+/* --- Hero --- */
+.hero-section {
+  background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+/* --- Section Divider --- */
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: #0d6efd;
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+/* --- Avatars --- */
+.avatar-sm {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar-lg {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Home featured project cards --- */
+.project-img-wrapper {
+  overflow: hidden;
+  height: 200px;
+  background: #f8f9fa;
+}
+
+.project-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
+}
+
+/* --- Portfolio page: horizontal project rows --- */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-row-card {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-row-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.project-row-image {
+  background: #e9ecef;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.project-row-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.project-row-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-row-content h3 {
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+/* --- Project outcomes list --- */
+.project-outcomes {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.project-outcomes li {
+  margin-bottom: 0.5rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* --- Skills section --- */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-pill {
+  background: white;
+  border: 1.5px solid #dee2e6;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skill-pill:hover {
+  background: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+/* --- Search bar --- */
+.portfolio-controls {
+  max-width: 520px;
+}
+
+/* --- Nav active state --- */
+.navbar .nav-link.active {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* --- Footer links --- */
+footer a {
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #0d6efd !important;
+}
+
+/* --- Page fade in --- */
+main {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Mobile responsive --- */
+@media (max-width: 992px) {
+  .project-row-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-row-image {
+    min-height: 240px;
+  }
+
+  .project-row-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-row-image {
+    min-height: 200px;
+  }
+
+  .project-row-content {
+    padding: 1.2rem;
+  }
+}
