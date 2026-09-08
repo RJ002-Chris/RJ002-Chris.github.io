@@ -56,6 +56,24 @@
   gap: 2rem;
 }
 
+/* Portfolio.jsx renders two spans inside this container. Without a rule they
+   run together as "August 2026Sole analyst". Flex plus gap separates them and
+   lets them wrap onto two lines on narrow screens. */
+.project-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.project-metadata > span + span::before {
+  content: "\00B7";
+  margin-right: 0.75rem;
+  color: #adb5bd;
+}
+
 .project-row-card {
   display: grid;
   grid-template-columns: 420px 1fr;
